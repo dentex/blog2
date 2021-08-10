@@ -1,19 +1,19 @@
 # YouTube Downloader for Android
 ### an Android app to download YouTube videos (and extract/convert audio to mp3). 
-#### Compatible with Android Lollipop (5.0 - API21) and up
+#### Compatible with Android from Lollipop (5.0 - API21) and up
 
-This will be a stripped-down and lightweight version of the old blog.   
-It will be used to provide the latest apk for the **YTD** app.
+This is a lightweight version of the old blog.   
+It'll be used to provide the latest apk for the **YTD** app.
 
 Get it here:
 
-# [DOWNLOAD LATEST BUILD](/files/apk/dentex.youtube.downloader_v7.2.apk)
+# [DOWNLOAD LATEST BUILD](/files/apk/dentex.youtube.downloader_v7.3.apk)
 
-versionName: `7.2`
+versionName: `7.3`
 
-versionCode: `155`
+versionCode: `156`
 
-SHA1 checksum: `11f3f4be16c8e7c710b6cb0a247af08a875382d8`
+SHA1 checksum: `587b9a70453659ba9830762d390987f75afdd730`
 
 [End User License Agreement (EULA)](/docs/eula.html)
 
@@ -48,8 +48,8 @@ then:
 - Many preferences to customize usage.
 
 ### Known issues
-- Some very long running downloads may be forced to PAUSE state if the app is not kept to the front for a certain amount of time. In this cases a manual resume is needed;
-- On KitKat and above, is possible to use the external (removable) sdcard as download destination folder, but that's one caveat: only the app's private folder will be available. IMPORTANT note: this folder will be deleted by the system (together with all your downloads) if you uninstall the app. For the moment it's not possible to choose a different directory on the external/removable sdcard;
+- Some long running downloads may be forced to a PAUSE state if the app is not kept to the front for a certain amount of time. In this cases a manual resume is needed;
+- On Lollipop and above, is possible to use the external (removable) sdcard as download destination folder, but that's one caveat: only the app's private folder will be available. IMPORTANT note: this folder will be deleted by the system (together with all your downloads) if you uninstall the app. For the moment it's not possible to choose a different directory on the external/removable sdcard;
 - The stream traditionally used by the app for the video preview if often missing nowadays, so a low resolution video-only stream is being used in such cases;
 - age-restricted videos requiring log-in might not work.
 
@@ -57,6 +57,7 @@ then:
 
 Are not supported for download all videos that:
 
+- require login for age confirmation
 - implement encrypted streams (some complete movies);
 - are not available in your country;
 - are live events.
@@ -155,6 +156,11 @@ For the translators list, see [HERE](/docs/translators.html).
     CC BY-NC-SA 2.5 CA licensed (see http://creativecommons.org/licenses/by-nc-sa/2.5/ca/)
 
 ### Changelog
+
+     v7.3 - Aug 10 2021
+    -----------------------------------
+    [x] encrypted signature patch (25)
+    [x] Remove support for age restricted videos
 
      v7.2 - Jun 14 2021
     -----------------------------------
